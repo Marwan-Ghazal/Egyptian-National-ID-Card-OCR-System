@@ -129,6 +129,7 @@ pip install -r requirements.txt
 
 ```bash
 # Navigate to project directory
+cd Egyptian-National-ID-Card-OCR-System
 
 # Start the FastAPI server
 uvicorn main:app --reload --port 8000
