@@ -2,6 +2,10 @@
 
 A comprehensive web service for processing and extracting data from Egyptian national ID cards using advanced OCR (Optical Character Recognition) and computer vision techniques.
 
+**Developed by:**
+- [Marwan Ghazal](https://github.com/marwan-ghazal)
+- [Omar Amin](https://github.com/omaramin-77)
+
 ## 🌟 Features
 
 - **Automatic Card Detection**: Detects and extracts ID cards from photos using edge detection and contour analysis
@@ -130,7 +134,6 @@ pip install -r requirements.txt
 ```bash
 # Navigate to project directory
 cd Egyptian-National-ID-Card-OCR-System
-
 # Start the FastAPI server
 uvicorn main:app --reload --port 8000
 
