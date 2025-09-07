@@ -6,7 +6,7 @@ A comprehensive web service for processing and extracting data from Egyptian nat
 - [Marwan Ghazal](https://github.com/marwan-ghazal)
 - [Omar Amin](https://github.com/omaramin-77)
 
-## 🌟 Features
+##  Features
 
 - **Automatic Card Detection**: Detects and extracts ID cards from photos using edge detection and contour analysis
 - **Perspective Correction**: Automatically corrects perspective distortion for optimal OCR accuracy
@@ -17,7 +17,7 @@ A comprehensive web service for processing and extracting data from Egyptian nat
 - **REST API**: RESTful API endpoints for programmatic access
 - **Real-time Processing**: Fast processing with visual feedback
 
-## 📋 Extracted Information
+##  Extracted Information
 
 ### Front Side
 - **Personal Photo**: Extracted ID photo
@@ -35,7 +35,7 @@ A comprehensive web service for processing and extracting data from Egyptian nat
 - **Marital Status**: Single/Married status
 - **Spouse Name**: Partner's name (if applicable)
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 ocr-arabic-master1/
@@ -52,7 +52,7 @@ ocr-arabic-master1/
 └── README.md                        # This file
 ```
 
-## 🔧 Core Modules
+##  Core Modules
 
 ### `main.py`
 - **FastAPI Application**: Web server setup and configuration
@@ -88,7 +88,7 @@ ocr-arabic-master1/
 - **Governorate Mapping**: Map ID codes to Egyptian governorates
 - **Place of Birth**: Determine birthplace from ID number
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -127,7 +127,7 @@ Install with:
 pip install -r requirements.txt
 ```
 
-## 🎯 Usage
+##  Usage
 
 ### Starting the Web Server
 
@@ -197,7 +197,7 @@ GET /api/temp/back?t=timestamp
 GET /health
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Tesseract Configuration
 
@@ -216,7 +216,7 @@ FINAL_CARD_SIZE = (1000, 630)    # Output card dimensions
 EXPECTED_ASPECT_RATIO = 1.58      # ID card aspect ratio
 ```
 
-## 🧪 Testing
+##  Testing
 
 ### Manual Testing
 ```bash
@@ -241,7 +241,7 @@ extract_front_side_data("temp_front.jpg")
 extract_back_side_data("temp_back.jpg")
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -277,42 +277,5 @@ Enable debug output in `card_recognition.py`:
 cv2.imshow("Debug", debug_image)
 cv2.waitKey(0)
 ```
-
-## 📊 Performance
-
-- **Processing Time**: ~2-5 seconds per card (depending on image size)
-- **Accuracy**: ~95% for clear, well-lit images
-- **Supported Formats**: JPG, PNG, TIFF
-- **Max Image Size**: 10MB per image
-- **Concurrent Requests**: Supports multiple simultaneous uploads
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/improvement`)
-3. Commit changes (`git commit -am 'Add new feature'`)
-4. Push to branch (`git push origin feature/improvement`)
-5. Create Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- **Tesseract OCR**: Google's open-source OCR engine
-- **OpenCV**: Computer vision library
-- **FastAPI**: Modern web framework for APIs
-- **scikit-image**: Image processing library
-
-## 📞 Support
-
-For issues and questions:
-1. Check the troubleshooting section
-2. Review error logs in console output
-3. Ensure all dependencies are properly installed
-4. Verify Tesseract Arabic language support
-
----
 
 **Note**: This system is designed specifically for Egyptian national ID cards and may require modifications for other document types or countries.
